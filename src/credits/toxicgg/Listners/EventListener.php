@@ -2,6 +2,6 @@
 
 namespace credits\toxicgg\Listners;
 
-class EventListner implements Listner{
+class EventListener implements Listener{
   // idk if i need this or now
 }
