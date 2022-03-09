@@ -12,17 +12,16 @@ use pocketmine\plugin\PluginBase;
 class Main extends PluginBase{
   
   /** @var Credits */
-	private $credits;
+  private $credits;
   
   protected function onEnable(): void{
-		      $this->credits = $this->getServer()->getPluginManager()->getPlugin("Credits");
+	  $this->credits = $this->getServer()->getPluginManager()->getPlugin("Credits");
 
-		      $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
-		      $this->getServer()->getPluginManager()->registerEvents(new TagResolveListener($this), $this);
-	}
+          $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
+          $this->getServer()->getPluginManager()->registerEvents(new TagResolveListener($this), $this);
+  }
   
   public function getCredits(Player $player) : string{
           $api = $this->getCredits($player);
   }
-
-
+}
