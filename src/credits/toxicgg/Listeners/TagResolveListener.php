@@ -30,7 +30,7 @@ class TagResolveListener implements Listener{
 
 		switch($tags[1]){
 			case "credits":
-				$value = $this->plugin->credits->getCredits($player);
+				$value = $this->plugin->credits->getDataManager()->getCredits($player);
 				break;
 		}
 
