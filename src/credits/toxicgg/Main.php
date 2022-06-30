@@ -4,8 +4,8 @@ declare(strict_types=1);
 namespace credits\toxicgg;
 
 use Laith98Dev\Credits\Main as Credits;
-use credits\toxicgg\listners\EventListener;
-use credits\toxicgg\listners\TagResolveListener;
+use credits\toxicgg\Listeners\EventListener;
+use credits\toxicgg\Listeners\TagResolveListener;
 use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
 
