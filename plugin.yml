@@ -1,7 +1,7 @@
 name: CreditsScore
 description: A simple test for supporting tags {credit} for scorehud, credits are made by laithdev
 author: ItzToxicGG
-version: 1.0-test
+version: 1.0
 main: credits\toxicgg\Main
 api: 4.0.0
-depends: ["ScoreHud", "Credits"]
+depend: [ScoreHud, Credits]
