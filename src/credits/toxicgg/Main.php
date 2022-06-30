@@ -12,7 +12,7 @@ use pocketmine\plugin\PluginBase;
 class Main extends PluginBase{
   
   /** @var Credits */
-  private $credits;
+  public $credits;
   
   protected function onEnable(): void{
 	  $this->credits = $this->getServer()->getPluginManager()->getPlugin("Credits");
