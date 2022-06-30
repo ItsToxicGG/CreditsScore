@@ -27,7 +27,7 @@ class EventListener implements Listener {
 		$player = $this->plugin->getServer()->getPlayerByPrefix($username);
 
 		if($player instanceof Player && $player->isOnline()){
-			(new PlayerTagUpdateEvent($player, new ScoreTag("credits", (string) $this->plugin->credits->getCredits())));
+			(new PlayerTagUpdateEvent($player, new ScoreTag("credits", (string) $this->plugin->credits->getDataManager()->getCredits())));
 		}
   }
 }
