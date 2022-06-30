@@ -1,6 +1,6 @@
 <?php 
 
-namespace credits\toxicgg\listeners;
+namespace credits\toxicgg\Listeners;
 
 use credits\toxicgg\Main;
 use Ifera\ScoreHud\event\PlayerTagUpdateEvent;
@@ -10,7 +10,7 @@ use pocketmine\player\Player;
 
 class EventListener implements Listener {
   
-  /** @var Main */
+        /** @var Main */
 	private $plugin;
 
 	public function __construct(Main $plugin){
