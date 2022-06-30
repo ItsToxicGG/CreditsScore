@@ -20,8 +20,4 @@ class Main extends PluginBase{
           $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
           $this->getServer()->getPluginManager()->registerEvents(new TagResolveListener($this), $this);
   }
-  
-  public function getCredits(Player $player) : string{
-          $api = $this->getCredits($player);
-  }
 }
