@@ -4,5 +4,6 @@ branches:
 - main
 projects:
   CreditsScore:
-    path: ""
+    path: "" 
+    lint: false
 ...
